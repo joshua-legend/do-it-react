@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import TodaysPlan from "./TodaysPlan";
+import PropsComponent from "./03/PropsComponent";
+import ChildCom from "./03/ChildComponent";
+import StateExample from "./03/StateExample";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="body">
+        <TodaysPlan/>
+        <PropsComponent name={"you are the one."}/>
+        <ChildCom
+            bool={"fact"}
+            num={12345}
+        />
+        <StateExample />
+      </div>
     </div>
+
   );
 }
 
