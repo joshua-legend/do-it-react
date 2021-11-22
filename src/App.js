@@ -4,6 +4,7 @@ import TodaysPlan from "./TodaysPlan";
 import PropsComponent from "./03/PropsComponent";
 import ChildCom from "./03/ChildComponent";
 import StateExample from "./03/StateExample";
+import Counter from "./03/Counter";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             num={12345}
         />
         <StateExample />
+        <Counter/>
       </div>
     </div>
 
